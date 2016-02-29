@@ -1,14 +1,14 @@
 
 # coding: utf-8
 
-# In[1]:
+# In[Import]:
 
 import gzip
 
 
 # Opening the gz files of moniCa. Given month, day, hours and minutes
 
-# In[47]:
+# In[Finding data location]:
 
 month = 11
 if month <= 9:
@@ -43,14 +43,8 @@ location = "\\\\winstorage\\users\\bspeckma\\TrafficData\\MoniCa"+"\\" + monthS+
 # 
 # Last line: [SIV] 1446681600 05-11-15 01:00 j 60 60 60 132 0 0 255 1 1 G
 
-# In[48]:
+# In[Opening data]:
 
 f=gzip.open(location,'rb')
 file_content=f.read()
 allLines=str(file_content).split("\\n")
-
-
-# In[46]:
-
-allLines[-2]
-
