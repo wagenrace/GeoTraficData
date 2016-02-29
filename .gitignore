@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+/.cache/
+/.eggs/
+/.tox/
+/*.egg-info/
+/build/
+/dist/
+/docs/build/
+/libs/
+/reports/
+
